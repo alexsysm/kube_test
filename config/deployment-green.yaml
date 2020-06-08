@@ -11,7 +11,7 @@ spec:
         color: green
     spec:
       containers:
-      - image: gcr.io/<PROJECT_ID>/imageview:green
+      - image: gcr.io/os.environ.get('PROJECT_ID')/imageview:green
         name: webserver-container
         env:
         - name: PROJECT_ID
